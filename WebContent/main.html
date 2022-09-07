@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박정현 포트폴리오</title>
+<link rel="stylesheet" type="text/css" href="css/style.css?ver=1">
+<script type="text/javascript">
+var num = 0;
+function colorChange() {
+	  var color = ["#FFFFFF","black"];
+	  var bodyTag = document.querySelector("body");
+	  var ConTag = document.querySelector(".Container");
+	  var SideTag = document.querySelector(".sidebar");
+	  var sectionTag = document.querySelectorAll(".prsection");
+	  var faTag = document.querySelector("a");
+	  if(num==0){
+		  num=1;
+		  bodyTag.style.backgroundColor = color[num];
+		  ConTag.style.color="#FFFFFF";
+		  SideTag.style.backgroundColor = color[num];
+		  faTag.style.color="#2e7d32";
+		  faTag.style.color="#FFFFFF";
+	  for (var i = 0; i < sectionTag.length; i++) {
+		  var item = sectionTag[i];
+		  item.style.backgroundColor=color[num];
+		}
+	  }else{
+	  	num=0;
+	  	bodyTag.style.backgroundColor = color[num];
+	  	ConTag.style.color="#000000";
+	  	SideTag.style.backgroundColor = "#ade470";
+	  	
+	  	faTag.style.color="#000000";
+	  	 for (var i = 0; i < sectionTag.length; i++) {
+			  var item = sectionTag[i];
+			  item.style.backgroundColor=color[num];
+			}
+	}
+}
+
+
+</script>
+
+</head>
+<body>
+
+	<div class="Container">
+		<nav class="sidebar">
+			<div class="img">
+			<img src="image/bono.jpg" alt="" width="150" height="150"  />
+			</div>
+			<h3 class="Click">나에 대하여</h3>
+		
+			<h3 class="Click">자격증</h3>
+			
+			<h3 class="Click">경험</h3>
+			
+			<h3 class="Click">취미</h3>
+			
+			<a id="d" href="Garllery.html">게시판</a>
+			
+		</nav>
+		<input type="button" value="화면전환" id="chabtn" onclick="colorChange()" width=50%;>
+	<header>
+		<section class="prsection" id="introM">
+			<p class="mainP">
+			<span id="a">Park</span>&nbsp;
+			<span id="b">Jeong</span>&nbsp;
+			<span id="c">Hyeon</span>
+			</p>
+			<p class="subMainP">나이 : 26</p>
+			<p class="subMainP">출생 : 1997.02.10</p>
+			<p class="subMainP">전공 : 컴퓨터공학과</p>
+			<p class="subMainP">번호 : 010.4080.7843</p>
+			<p class="subMainP">Email : wjdgus8576@naver.com</p>
+
+			<p id="subM"><span >"한 번 실패와 영원한 실패를 혼동하지 마라." -F.스콧 핏제랄드</span></p>
+			<p class="sendMassege">
+			<br>안녕하세요.<br>웹 개발자를 꿈꾸고 있는 박정현입니다.
+			<br>제가 더 궁금하시다면 아래의 깃허브로 들어가주세요.__</p>
+			<footer>
+				<a id="git" href="https://github.com/DuBori"><img alt="" src="image/gitimg.png" width="40px" height="40px" border-radious:70%;></a>
+			</footer>
+			<hr>
+		</section>
+	</header>
+		<section class="prsection" id="experience">
+			<p class="mainP">자격증</p>
+			<p class="sendMassege">컴퓨터활용능력 2급</p>
+			<p class="subMainP">취득일 : 2020.02.21</p>
+			<p class="sendMassege">SQLD</p>
+			<p class="subMainP">취득일 : 2022.04.08</p>
+			<p class="sendMassege">정보처리기사</p>
+			<p class="subMainP">취득일 : 2022.06.17</p>
+			<hr>
+		</section>
+		
+		<section class="prsection" id="education">
+			<p class="mainP">스킬</p>
+			<p class="subPre">I can...</p>
+			<img alt="" src="image/html.png" width="90px" height="90px">
+			<img alt="" src="image/css.png" width="90px" height="90px">
+			<img alt="" src="image/java.png" width="90px" height="90px">
+			<img alt="" src="image/servlet.png" width="90px" height="90px">
+			<img alt="" src="image/database.png" width="90px" height="90px">
+			<p class="subPre">I use develop tool...</p>
+			<img alt="" src="image/eclipse.jpeg" width="90px" height="90px">
+			<img alt="" src="image/vscode.jpg" width="90px" height="90px">
+			
+			<hr>
+		</section>
+		
+		<section class="prsection" id="skills">
+	
+			<p class="mainP">취미</p>
+			<img alt="" src="image/walking.png" width="90px" height="90px">
+			<img alt="" src="image/strike.png" width="90px" height="90px">
+			<img alt="" src="image/game.png" width="90px" height="90px">
+			<img alt="" src="image/dumbbell.png" width="90px" height="90px">
+			
+			<p class="subPre">#산책#볼링#게임#깔짝운동</p>
+			<hr>
+		</section>
+	</div>
+	 <script type="text/javascript" src="scroll.js"></script>
+</body>
+</html>

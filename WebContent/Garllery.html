@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박정현 포트폴리오</title>
+<link rel="stylesheet" type="text/css" href="css/style.css?ver=1">
+<script type="text/javascript">
+var num = 0;
+function colorChange() {
+	  var color = ["#FFFFFF","black"];
+	  var bodyTag = document.querySelector("body");
+	  var ConTag = document.querySelector(".Container");
+	  var SideTag = document.querySelector(".sidebar");
+	  var sectionTag = document.querySelectorAll(".prsection");
+	 
+	  if(num==0){
+		  num=1;
+		  bodyTag.style.backgroundColor = color[num];
+		  ConTag.style.color="#FFFFFF";
+		  SideTag.style.backgroundColor = color[num];
+		  SideTag.style.color="#FFFFFF";
+		  
+	  for (var i = 0; i < sectionTag.length; i++) {
+		  var item = sectionTag[i];
+		  item.style.backgroundColor=color[num];
+		}
+	  }else{
+	  	num=0;
+	  	bodyTag.style.backgroundColor = color[num];
+	  	
+	  	ConTag.style.color="#000000";
+	  	SideTag.style.backgroundColor = "#ade470";
+	  	SideTag.style.color="#ade470";
+	  	 for (var i = 0; i < sectionTag.length; i++) {
+			  var item = sectionTag[i];
+			  item.style.backgroundColor=color[num];
+			}
+	}
+}
+
+
+</script>
+
+</head>
+<body>
+
+	<div class="Container">
+		<nav class="sidebar">
+			<div class="img">
+			<img src="image/bono.jpg" alt="" width="150" height="150"  />
+			</div>
+			<h3 class="Click"><a href="main.html">나에 대하여</a></h3>
+		
+			<h3 class="Click"><a href="main.html">자격증</a></h3>
+			
+			<h3 class="Click"><a href="main.html">경험</a></h3>
+			
+			<h3 class="Click"><a href="main.html">취미</a></h3>
+			
+			<a id="d" href="Garllery.html">게시판</a>
+			
+		</nav>
+	<header>
+		<section class="introG" >
+			<p class="mainP">사진</p>
+			<img alt="" src="image/1.jpg" width="200px" height="200px">
+			<img alt="" src="image/2.jpg" width="200px" height="200px">
+			<img alt="" src="image/3.jpg"  width="200px" height="200px">
+			<img alt="" src="image/4.jpg"  width="200px" height="200px">
+			<img alt="" src="image/5.jpg"  width="200px" height="200px">
+			<img alt="" src="image/6.jpg"  width="200px" height="200px">
+			<hr>
+		</section>
+	</header>
+		<section class="introG" >
+			<p class="mainP">게시글</p>
+			
+			<div class="distool">
+				<span id="distool_name">나의 게시판</span>
+				<div class="disend">
+					<input type="text" id="search">
+					<img alt="" src="image/search.png" width="20px" height="20px">
+				</div>
+			</div>
+			<hr id="dishr"/>
+			
+			<div class="atribute">
+				<ul id="cate">
+					<li>No</li>
+					<li>카테고리</li>
+				</ul>
+				<ul>
+					<li>제목</li>
+				</ul>
+				<ul id="atri_third">
+					<li>글쓴이</li>
+					<li>작성시간</li>
+					<li>조회수</li>
+					<li>좋아요</li>
+				</ul>
+			
+			</div>
+			<hr id="dishr"/>
+			
+			<p>게시판 내용 없음</p>
+			<hr id="dishr"/>
+			<hr>
+			<div class="write">
+			<span>글쓰기</span>
+			<img alt="" src="image/edit.png" width="20px" height="20px">
+			</div>
+		</section>
+		
+		
+		
+		
+	</div>
+	 <script type="text/javascript" src="scroll.js"></script>
+</body>
+</html>

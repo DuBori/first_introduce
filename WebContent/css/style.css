@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+body
+{
+	font-family: 맑은고딕, "Times New Roman";
+	
+	background-color: #FFFFFF;	
+}
+a{
+	color:black;
+	text-decoration: none;
+}
+
+#a{
+	color: #689f38;
+}
+#b{
+	color: #558b2f;	
+}
+#c{
+	
+	color: #387002;
+}
+hr{
+	margin-top:20px;
+	background-color: #629749;
+	height: 3px;
+}
+
+/* Garllery.html 관련 */
+#d{
+  font-size:18.72px;
+  opacity:0.7;
+  text-decoration: none;
+  margin: 18.72px 0;
+}
+
+
+/*    */
+
+.Container
+{
+	
+	flex-direction: column;
+	margin: 0;
+	color: #000000;	
+}
+
+li
+{
+	list-style: none;
+	
+}
+.sidebar
+{
+	position: fixed;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	text-align : center;
+	height: 100vh;
+	top:0;
+	left:0;
+	width: 17rem;
+	background-color:#ade470;
+}
+.sidebar ul
+{
+	align-content: space-between;
+}
+.sidebar img
+{
+	border-radius: 50%;
+}
+
+#chabtn
+{
+	position:fixed;
+	background-color: #ade470;
+	border:none;
+	top:20px;
+	left:10px;
+}
+
+
+
+section
+{
+	text-align: left;
+	margin-left:  266px;
+	background-color: #FFFFFF;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+.introG
+{
+	border: 5px solid #629749;
+}
+
+.mainP
+{
+	font-size: 2em;
+	margin-top:0;
+	margin-bottom: 20px;
+	color: #558b2f;
+	text-decoration: underline;
+}
+.sendMassege
+{
+	font-size: 0.9em;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+
+.subMainP
+{
+	margin:0;
+	font-size: 0.8em;
+	
+}
+footer{
+	margin-top: 30px;
+}
+
+/* hover 모음  */
+a:hover
+{
+	color:#2e7d32; 
+}
+#d:hover{
+	color:#2e7d32;
+	font-size: 1.1em;
+  	opacity: 1;
+  	text-shadow: 0.7px 0.7px 0.7px #000;
+  	background-color: #ade470;
+}
+
+#chabtn:hover
+{
+	background-color: #387002;
+	border:none;
+}
+
+#git:hover {
+	transform: translate(0, -3px);
+}
+img{
+	margin-right: 30px;
+}
+
+
+img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5); /* 크롬 */
+  -moz-transform: scale(1.5); /* 파이어폭스 */
+  -o-transform: scale(1.5); /* 오페라 */
+  z-index: 1;
+  align-items: center;
+}
+.sidebar img:hover
+{
+	 transform: scale(1.2);
+	 z-index: 1;
+	 align-items: center;
+}
+
+
+
+.sidebar h3:hover {
+  font-size: 1.1em;
+  opacity: 1;
+  text-shadow: 0.7px 0.7px 0.7px #000;
+  color:#2e7d32;
+  background-color: #ade470;
+}
+
+
+
+h3{
+	opacity: 0.7;
+}
+
+.subPre
+{
+	margin-top:8px;
+	color: #387002;
+	margin-bottom: 30px;
+	font-size: 20px;
+	
+}
+
+#subM
+{
+	
+	font-weight: bold;
+}
+
+.distool
+{
+	display : flex;
+	justify-content: space-between;
+}
+
+.disend
+{
+	display:flex;
+}
+#dishr
+{
+	margin-top:5px;
+	height:1px;
+	background-color: #000;
+}
+
+.atribute
+{
+	font-size:0.8em;
+	margin-top: 5px;
+	padding: 0;
+}
+
+
+.atribute>ul
+{
+	display: inline-block;
+	margin-right: 160px;
+}
+.atribute>ul>li
+{
+	display: inline-block;
+	padding-right: 10px;
+}
+
+
+#atri_third
+{
+	margin-left: 320px;
+	margin-right: 0px;
+}
+.write
+{
+	display: flex;
+	justify-content: flex-end;
+}
+
